@@ -1,0 +1,18 @@
+[
+  {"name": "Pragmatic Play", "slug": "pragmaticplay", "kind": "slots"},
+  {"name": "Play'n GO", "slug": "playngo", "kind": "slots"},
+  {"name": "Hacksaw Gaming", "slug": "hacksaw", "kind": "slots"},
+  {"name": "Nolimit City", "slug": "nolimit", "kind": "slots"},
+  {"name": "Evolution", "slug": "evolution", "kind": "live"},
+  {"name": "Endorphina", "slug": "endorphina", "kind": "slots"},
+  {"name": "BGaming", "slug": "bgaming", "kind": "slots"},
+  {"name": "Relax Gaming", "slug": "relax", "kind": "slots"},
+  {"name": "Push Gaming", "slug": "pushgaming", "kind": "slots"},
+  {"name": "Quickspin", "slug": "quickspin", "kind": "slots"},
+  {"name": "NetEnt", "slug": "netent", "kind": "slots"},
+  {"name": "Red Tiger", "slug": "redtiger", "kind": "slots"},
+  {"name": "ELK Studios", "slug": "elk", "kind": "slots"},
+  {"name": "Big Time Gaming", "slug": "bigtimegaming", "kind": "slots"},
+  {"name": "Yggdrasil", "slug": "yggdrasil", "kind": "slots"},
+  {"name": "Thunderkick", "slug": "thunderkick", "kind": "slots"}
+]
