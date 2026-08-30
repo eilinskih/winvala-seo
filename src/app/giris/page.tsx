@@ -5,7 +5,7 @@ import { VoxBand, VoxCta } from "@/components/VoxCta";
 export const metadata: Metadata = {
   title: "Winvala giriş",
   description:
-    "Winvala giriş ve login kapısı. Casino Winvala hesabına resmi salondan gir.",
+    "Winvala güncel giriş. Adres değişse de kullanıcı adı ve şifre aynı kalır. Sahte sitelere girme.",
   alternates: { canonical: "/giris/" },
 };
 
@@ -17,11 +17,11 @@ export default function GirisPage() {
         <section className="wv-hero">
           <div className="wv-wrap">
             <div className="wv-hero-frame">
-              <p className="wv-kicker">Kapı</p>
+              <p className="wv-kicker">Güncel giriş</p>
               <h1>Winvala giriş</h1>
               <p className="wv-lede">
-                Login burada. Winvala giriş adresi değişse de hesabın, bakiye ve
-                lobi aynı çatıda kalır. Bizim kapımız tek hesap çalıştırır.
+                Winvala güncel giriş. Adres değişse de kullanıcı adı ve şifre
+                aynı kalır. Sahte sitelere girme.
               </p>
               <div className="wv-cta-row">
                 <VoxCta slot="giris" label="Giriş yap" />
@@ -35,19 +35,18 @@ export default function GirisPage() {
         <div className="wv-wrap">
           <VoxBand
             slot="giris"
-            text="Winvala giriş: kullanıcı adı ve şifre aynı kalır. Sahte kopya kapılardan uzak dur."
-            label="Resmi giriş"
+            text="Kullanıcı adı ve şifren aynı kalır. Sahte sitelere girme."
+            label="Giriş yap"
           />
           <article className="wv-section wv-prose">
-            <h2>Login nasıl yürür</h2>
+            <h2>Nasıl giriş yapılır</h2>
             <p>
-              Winvala giriş üç adımdır: kapıyı aç, bilgilerini yaz, lobiye düş.
-              Yeni üyede kayıt formu login’in yanında durur. Biz şifreyi burada
-              saklamayız — form salonun kendi ekranındadır.
+              Üç adım: salonu aç, bilgilerini yaz, lobiye gir. Yeniysen üye ol
+              butonu giriş ekranının yanında. Form salonda açılır.
             </p>
             <p>
-              Erişim kesilirse güncel giriş yine bu sayfadan salona bağlanır.
-              Adres kılıfı değişir, üyelik dosyası değişmez.
+              Site açılmazsa güncel giriş yine bu sayfadan salona bağlanır.
+              Adres değişir, hesabın değişmez.
             </p>
             <div className="wv-linkrow">
               <a href="/bonus/">Bonus</a>
@@ -60,22 +59,22 @@ export default function GirisPage() {
             <details>
               <summary>Winvala giriş çalışmazsa?</summary>
               <p>
-                Önce bu sayfadaki kapıyı kullan. Eski bookmark’lar kapanmış
-                ayna olabilir. Hesap silinmez; kapı yenilenir.
+                Önce bu sayfadaki güncel girişi kullan. Eski yer imleri
+                çalışmayabilir. Hesap silinmez; adres yenilenir.
               </p>
             </details>
             <details>
-              <summary>Login ve kayıt aynı yerde mi?</summary>
+              <summary>Giriş ve üye ol aynı yerde mi?</summary>
               <p>
-                Evet. Winvala login ekranı üyelik formunu da taşır. Kayıt
-                sonrası lobi hemen açılır.
+                Evet. Winvala giriş ekranında üye ol formu da var. Kayıt sonrası
+                lobi hemen açılır.
               </p>
             </details>
           </section>
           <VoxBand
             slot="after"
-            text="Kapı hazır. Winvala giriş için salona geç."
-            label="Hesaba gir"
+            text="Hazırsan giriş yap, salona gir."
+            label="Giriş yap"
           />
         </div>
       </main>

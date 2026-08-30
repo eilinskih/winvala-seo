@@ -26,7 +26,7 @@ export function logoUrl(slug: string): string {
 }
 
 export const VOL_TR: Record<string, string> = {
-  low: "düşük",
-  medium: "orta",
-  high: "yüksek",
+  low: "düşük volatilite",
+  medium: "orta volatilite",
+  high: "yüksek volatilite",
 };

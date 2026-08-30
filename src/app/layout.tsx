@@ -20,11 +20,11 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Winvala Casino | Resmi salon",
+    default: "Winvala Casino | Slot ve canlı casino",
     template: "%s | Winvala",
   },
   description:
-    "Winvala casino salonunda slotlar, canlı masalar ve sağlayıcı lobisi. Casino Winvala kapısı burada açılır.",
+    "Winvala'da slotlar, canlı casino ve kasa tek hesapta. Resmi siteden giriş yap, lobide oyna.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -32,7 +32,8 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: "Winvala",
     title: "Winvala Casino",
-    description: "Winvala casino — resmi salon. Casino Winvala kapısı.",
+    description:
+      "Winvala casino — slotlar, canlı casino, kasa. Casino Winvala'ya resmi siteden giriş.",
   },
   twitter: {
     card: "summary",

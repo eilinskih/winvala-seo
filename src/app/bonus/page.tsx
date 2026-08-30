@@ -6,7 +6,7 @@ import { FACTS } from "@/lib/offer";
 export const metadata: Metadata = {
   title: "Winvala bonus",
   description:
-    "Winvala bonus masası: hoş geldin paketi 100% 5.000 TL’ye kadar. Şartlar kasada.",
+    "Winvala hoş geldin bonusu %100, 5.000 TL’ye kadar. Koşullar üyelik sonrası kasa ekranında.",
   alternates: { canonical: "/bonus/" },
 };
 
@@ -18,14 +18,14 @@ export default function BonusPage() {
         <section className="wv-hero">
           <div className="wv-wrap">
             <div className="wv-hero-frame">
-              <p className="wv-kicker">Kasa üstü</p>
+              <p className="wv-kicker">Hoş geldin</p>
               <h1>Winvala bonus</h1>
               <p className="wv-lede">
-                Bizim hoş geldin paketi: {FACTS.welcomeBonus}. Sayıyı şişirmeyiz.
-                Çevrim ve oyun listesi kasa ekranında durur.
+                Hoş geldin bonusu {FACTS.welcomeBonus}. Koşullar üyelik sonrası
+                kasa ekranında.
               </p>
               <div className="wv-cta-row">
-                <VoxCta slot="bonus" label="Bonusu aç" />
+                <VoxCta slot="bonus" label="Bonusu al" />
                 <a className="wv-cta wv-cta--ghost" href="/giris/">
                   Giriş
                 </a>
@@ -36,42 +36,41 @@ export default function BonusPage() {
         <div className="wv-wrap">
           <VoxBand
             slot="bonus"
-            text="Winvala bonus hesabına bağlanır. Önce kapı, sonra kasa."
-            label="Paketi al"
+            text="Bonusu almak için üye ol, kasadan talep et."
+            label="Bonusu al"
           />
           <article className="wv-section wv-prose">
-            <h2>Ne yayınlıyoruz</h2>
+            <h2>Hoş geldin bonusu</h2>
             <p>
-              Winvala bonus olarak doğrulanan tek paket: yüzde yüz eşleşme, tavan
-              5.000 TL. Başka tutar, bedava spin adedi veya gizli kod burada
-              yok — elimizde yoksa yazmayız.
+              Hoş geldin bonusu yüzde yüz eşleşme, tavan 5.000 TL. Çevrim ve
+              oyun listesi kasa ekranında. Başka tutar veya gizli kod burada yok.
             </p>
             <p>
-              Talep butonu salonda “Bonus talebi” olarak durur. Kampanya
-              takvimi <a href="/promo/">promo</a> tahtasına bağlıdır.
+              Talep butonu salonda “Bonus talebi” olarak durur. Kampanyalar{" "}
+              <a href="/promo/">promo</a> sayfasında.
             </p>
           </article>
           <section className="wv-section wv-faq">
             <h2>Bonus soruları</h2>
             <details>
-              <summary>Winvala bonus kimde açılır?</summary>
+              <summary>Hoş geldin bonusu kimlere geçerli?</summary>
               <p>
-                Yeni hesapta hoş geldin paketi kasa üzerinden bağlanır. Eski
-                üye için ayrı bir rakam yayınlamıyoruz.
+                Yeni hesapta hoş geldin paketi kasa üzerinden bağlanır. Eski üye
+                için ayrı bir rakam yok.
               </p>
             </details>
             <details>
               <summary>Çevrim nedir?</summary>
               <p>
-                Çevrim, bonusun bakiyeye dönmesi için salonda tamamlanan
-                çevrimdir. Katı rakamı kasa metninden oku; burada uydurmayız.
+                Çevrim, bonusun bakiyeye dönmesi için salonda oynanması gereken
+                tutar. Katı rakamı kasa metninden oku.
               </p>
             </details>
           </section>
           <VoxBand
             slot="after"
-            text="Paket seni bekler. Winvala bonus için salona gir."
-            label="Bonusu seç"
+            text="Bonusu almak için salona gir."
+            label="Bonusu al"
           />
         </div>
       </main>

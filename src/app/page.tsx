@@ -6,28 +6,28 @@ import { providers, slots } from "@/lib/catalog";
 import { FACTS, PAYMENTS } from "@/lib/offer";
 
 export const metadata: Metadata = {
-  title: "Winvala Casino | Resmi salon",
+  title: "Winvala Casino | Slot ve canlı casino",
   description:
-    "Winvala casino salonunda slotlar, canlı masalar ve sağlayıcı lobisi. Casino Winvala kapısı resmi sitede açılır.",
+    "Winvala'da slotlar, canlı casino ve kasa tek hesapta. Resmi siteden giriş yap, lobide oyna. Casino Winvala.",
   alternates: { canonical: "/" },
 };
 
 const faqs = [
   {
     q: "Winvala nedir?",
-    a: "Biz Winvala’yız: slotlar ve canlı masaları aynı çatı altında toplayan casino salonumuz. Kapıdan geçince lobi, oyunlar ve kasa aynı hesaba bağlıdır.",
+    a: "Biz Winvala’yız. Slot oyunları, canlı casino ve kasa tek hesapta. Giriş yap, lobide oyna.",
   },
   {
-    q: "Casino Winvala’da hangi stüdyolar var?",
-    a: "Lobide Pragmatic Play, Play’n GO, Hacksaw, Nolimit, Evolution (canlı masa etiketi) ve diğer stüdyoların logoları durur. Kartlar stüdyo sitelerine çıkmaz.",
+    q: "Casino Winvala’da hangi oyunlar var?",
+    a: "Lobide Pragmatic Play, Play’n GO, Hacksaw, Nolimit City, Evolution (canlı casino) ve yüzden fazla sağlayıcı durur. Logoya bas, o stüdyonun slotlarını gör.",
   },
   {
-    q: "Ödeme nasıl yürür?",
-    a: "Kasa Mastercard, VISA, banka havalesi, kripto, FulgurPay, Anında Havale ve NakitX kabul eder. Günlük çekim tavanı 500.000 TL ve 10.000 USDT olarak yayınlanır.",
+    q: "Nasıl para yatırılır / çekilir?",
+    a: "Kasa Mastercard, VISA, banka havalesi, kripto, FulgurPay, Anında Havale ve NakitX kabul eder. Günlük çekim limiti 500.000 TL ve 10.000 USDT.",
   },
   {
-    q: "Mobilde salon açık mı?",
-    a: "Evet. Winvala tarayıcıda tam salon verir; ana ekrana ekleme adımları Uygulama sayfasında durur.",
+    q: "Mobilde oynanır mı?",
+    a: "Evet. Winvala tarayıcıda açılır. App Store / Play uygulaması yok. Safari veya Chrome’dan Ana Ekrana Ekle — adımlar Uygulama sayfasında.",
   },
 ];
 
@@ -40,17 +40,16 @@ export default function HomePage() {
           <div className="wv-wrap">
             <div className="wv-hero-frame">
               <GateHero />
-              <p className="wv-kicker">Resmi salon</p>
+              <p className="wv-kicker">Güncel giriş</p>
               <h1>Winvala Casino</h1>
               <p className="wv-lede">
-                Kapı Valhalla kemerinin altında durur. Bizim salonumuzda lobi,
-                masalar ve kasa tek hesapta toplanır — casino Winvala’ya buradan
-                girersin.
+                Winvala’da slotlar, canlı casino ve kasa tek hesapta. Resmi
+                siteden giriş yap, lobide oyna.
               </p>
               <div className="wv-cta-row">
                 <VoxCta slot="home" label="Salona gir" />
                 <a className="wv-cta wv-cta--ghost" href="#oyunlar">
-                  Oyun lobisi
+                  Slot oyunları
                 </a>
               </div>
             </div>
@@ -60,15 +59,15 @@ export default function HomePage() {
         <div className="wv-wrap">
           <VoxBand
             slot="mid"
-            text="Winvala kapısı açık. Hesabın lobide seni bekler."
-            label="Hesabı aç"
+            text="Hesabın hazır. Giriş yap, lobide oyna."
+            label="Üye ol"
           />
 
           <LobbyGalleries slots={slots} providers={providers} />
 
           <VoxBand
             slot="lobby"
-            text="Beğendiğin kapağı seç, sonra salona geç. Stüdyo sitelerine çıkış yok."
+            text="Beğendiğin oyuna tıkla, salonda açılsın."
             label="Oyunu aç"
           />
 
@@ -76,28 +75,28 @@ export default function HomePage() {
             <h2>Casino salonu</h2>
             <div className="wv-prose">
               <p>
-                Winvala casino tek çatı: slot ızgarası, canlı masalar ve kasa.
-                Operatör Vanta Technology LTD, lisans Anjouan Gaming. 2026’da
-                açılan salonumuz TR dilinde yürür.
+                Winvala’da slotlar, canlı casino ve kasa tek hesapta. Operatör
+                Vanta Technology LTD, lisans Anjouan Gaming. 2026’da açıldık;
+                site TR dilinde.
               </p>
               <p>
-                Canlı tarafta Evolution etiketi lobide durur. Slot tarafında
-                yüzden fazla sağlayıcı kataloğu yayınlanır; bu sayfada sık
-                dönen stüdyoların logolarını ve kapaklarını gösteriyoruz.
+                Canlı casinoda Evolution masaları var. Slot tarafında yüzden
+                fazla sağlayıcı; burada sık oynanan stüdyoların logolarını ve
+                oyunlarını gösteriyoruz.
               </p>
             </div>
             <div className="wv-linkrow">
-              <a href="/giris/">Giriş kapısı</a>
-              <a href="/bonus/">Bonus masası</a>
-              <a href="/promo/">Kampanya tahtası</a>
+              <a href="/giris/">Güncel giriş</a>
+              <a href="/bonus/">Hoş geldin bonusu</a>
+              <a href="/promo/">Kampanyalar</a>
             </div>
           </section>
 
           <section className="wv-section" id="odeme">
             <h2>Kasa ve ödemeler</h2>
             <p className="wv-section-lead">
-              Casino Winvala kasasında yedi yöntem durur. Kazanç tavanı
-              yayınlanmaz; günlük çekim 500.000 TL ve 10.000 USDT.
+              Winvala kasasında yedi yöntem var. Günlük çekim limiti 500.000 TL
+              ve 10.000 USDT.
             </p>
             <div className="wv-pay-grid">
               {PAYMENTS.map((p) => (
@@ -109,31 +108,30 @@ export default function HomePage() {
           </section>
 
           <section className="wv-section" id="bonuslar">
-            <h2>Bonus masası</h2>
+            <h2>Hoş geldin bonusu</h2>
             <div className="wv-prose">
               <p>
-                Salon hoş geldin paketi: {FACTS.welcomeBonus}. Şartlar kasa
-                ekranında durur. Sayı uydurmayız — ayrıntı{" "}
-                <a href="/bonus/">bonus</a> sayfasında.
+                Hoş geldin bonusu {FACTS.welcomeBonus}. Koşullar üyelik sonrası
+                kasa ekranında. Ayrıntı <a href="/bonus/">bonus</a> sayfasında.
               </p>
             </div>
           </section>
 
           <section className="wv-section" id="uygulama">
-            <h2>Mobil salon</h2>
+            <h2>Mobilde oyna</h2>
             <div className="wv-prose">
               <p>
-                Winvala tarayıcıda tam lobi verir. Mağaza uygulaması
-                yayınlamıyoruz; ana ekrana ekleme adımları{" "}
-                <a href="/app/">uygulama</a> sayfasında durur.
+                Winvala tarayıcıda açılır. App Store / Play uygulaması yok.
+                Safari veya Chrome’dan Ana Ekrana Ekle — adımlar{" "}
+                <a href="/app/">uygulama</a> sayfasında.
               </p>
             </div>
           </section>
 
           <VoxBand
             slot="after"
-            text="Metin bitti. Kapı hâlâ açık — Winvala salonuna geç."
-            label="Şimdi oyna"
+            text="Hazırsan salona gir."
+            label="Giriş yap"
           />
 
           <section className="wv-section wv-faq" id="sss">

@@ -40,13 +40,11 @@ export function SiteFooter() {
             </a>
           ))}
           <a href={offerUrl("footer")} rel="nofollow sponsored noopener" target="_blank">
-            Salona git
+            Salona gir
           </a>
         </nav>
         <p className="wv-fine">
-          Winvala resmi tanıtım sitesi. 18+ yaş sınırı geçerlidir. Kumar
-          bağımlılık yapabilir — oyunu sınırla. Ortak bağlantılar sponsorludur.
-          Vanta Technology LTD · Anjouan Gaming.
+          18+ · Sorumlu oyun. Vanta Technology LTD · Anjouan Gaming.
         </p>
       </div>
     </footer>
@@ -92,8 +90,8 @@ export function GateMark() {
 
 export function GateHero() {
   return (
-    <svg className="wv-gate" viewBox="0 0 220 140" role="img" aria-label="Winvala Valhalla kapısı">
-      <title>Winvala casino Valhalla kapısı</title>
+    <svg className="wv-gate" viewBox="0 0 220 140" role="img" aria-label="Winvala Casino">
+      <title>Winvala Casino — Valhalla</title>
       <defs>
         <linearGradient id="ember" x1="0" y1="1" x2="0" y2="0">
           <stop offset="0" stopColor="#e26a1a" stopOpacity="0.9" />

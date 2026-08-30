@@ -20,12 +20,16 @@ export type OfferSlot =
   | "promo"
   | "app";
 
-export function offerUrl(slot: OfferSlot = "home"): string {
+export function offerUrl(slot: OfferSlot | `game-${string}` = "home"): string {
   const params = new URLSearchParams({
     sub_id: `tr-${slot}`,
     click_id: "",
   });
   return `${OFFER_BASE}?${params.toString()}`;
+}
+
+export function gameOfferUrl(slug: string): string {
+  return offerUrl(`game-${slug}`);
 }
 
 export const NAV = [

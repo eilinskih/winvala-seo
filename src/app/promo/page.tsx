@@ -5,7 +5,7 @@ import { VoxBand, VoxCta } from "@/components/VoxCta";
 export const metadata: Metadata = {
   title: "Winvala promo",
   description:
-    "Winvala promo tahtası: salon kampanyaları kasa ve lobi duyurularında durur.",
+    "Winvala güncel kampanyalar üyelik sonrası lobide görünür.",
   alternates: { canonical: "/promo/" },
 };
 
@@ -17,14 +17,14 @@ export default function PromoPage() {
         <section className="wv-hero">
           <div className="wv-wrap">
             <div className="wv-hero-frame">
-              <p className="wv-kicker">Tahta</p>
+              <p className="wv-kicker">Kampanyalar</p>
               <h1>Winvala promo</h1>
               <p className="wv-lede">
-                Kampanyalar salonda döner. Winvala promo listesini burada
-                uydurmayız: canlı tahta kasa bildirimlerinde açılır.
+                Güncel kampanyalar üyelik sonrası lobide görünür. Burada sabit
+                kod listesi yok.
               </p>
               <div className="wv-cta-row">
-                <VoxCta slot="promo" label="Kampanyayı gör" />
+                <VoxCta slot="promo" label="Salona gir" />
                 <a className="wv-cta wv-cta--ghost" href="/bonus/">
                   Bonus
                 </a>
@@ -35,26 +35,26 @@ export default function PromoPage() {
         <div className="wv-wrap">
           <VoxBand
             slot="promo"
-            text="Winvala promo ekranı hesap açılınca görünür."
-            label="Tahtayı aç"
+            text="Kampanyalar hesap açılınca lobide görünür."
+            label="Salona gir"
           />
           <article className="wv-section wv-prose">
-            <h2>Nasıl okunur</h2>
+            <h2>Güncel kampanyalar</h2>
             <p>
-              Promo, hoş geldin paketi dışında kalan duyurulardır. Günlük
-              takvim, kayıp iadesi veya spin sayısı elimizde doğrulanmadığı
-              için yazılmıyor. Salona gir, tahtayı orada oku.
+              Promo, hoş geldin bonusu dışında kalan duyurulardır. Günlük
+              takvim, kayıp iadesi veya spin sayısı lobide açılır. Üye ol,
+              kampanyaları orada gör.
             </p>
             <div className="wv-linkrow">
               <a href="/giris/">Giriş</a>
-              <a href="/bonus/">Hoş geldin paketi</a>
+              <a href="/bonus/">Hoş geldin bonusu</a>
               <a href="/">Salon</a>
             </div>
           </article>
           <VoxBand
             slot="after"
-            text="Tahta salonda. Winvala promo için kapıdan geç."
-            label="Duyuruları aç"
+            text="Kampanyalar lobide. Üye ol, bak."
+            label="Salona gir"
           />
         </div>
       </main>

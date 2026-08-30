@@ -40,7 +40,7 @@ export function VoxBand({
   label: string;
 }) {
   return (
-    <aside className="wv-band" aria-label="Winvala salon çıkışı">
+    <aside className="wv-band" aria-label="Winvala salon">
       <p>{text}</p>
       <VoxCta slot={slot} label={label} />
     </aside>
@@ -49,8 +49,8 @@ export function VoxBand({
 
 export function StickyBar() {
   return (
-    <aside className="wv-sticky" aria-label="Winvala salon çıkışı">
-      <p>Winvala kapısı açık. 18+ · Sorumlu oyun.</p>
+    <aside className="wv-sticky" aria-label="Winvala salon">
+      <p>Winvala açık. 18+ · Sorumlu oyun.</p>
       <VoxCta slot="sticky" label="Salona gir" compact />
     </aside>
   );

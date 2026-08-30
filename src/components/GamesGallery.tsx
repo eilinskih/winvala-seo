@@ -3,11 +3,16 @@
 import { useMemo, useState } from "react";
 import { ProvidersGallery } from "@/components/ProvidersGallery";
 import { VOL_TR, type Provider, type Slot } from "@/lib/catalog";
+import { gameOfferUrl } from "@/lib/offer";
 
 function Tile({ game }: { game: Slot }) {
-  const href = "/giris/";
   return (
-    <a className="wv-game" href={href}>
+    <a
+      className="wv-game"
+      href={gameOfferUrl(game.slug)}
+      rel="nofollow sponsored noopener"
+      target="_blank"
+    >
       <div className="wv-thumb">
         {game.thumb ? (
           <img
@@ -57,19 +62,17 @@ export function LobbyGalleries({
   return (
     <>
       <section className="wv-section" id="saglayicilar">
-        <h2>Sağlayıcı lobisi</h2>
+        <h2>Oyun sağlayıcıları</h2>
         <p className="wv-section-lead">
-          Winvala salonunda stüdyo logoları bir bakışta durur. Çipe dokun, o
-          stüdyonun oyunlarını aşağıda aç.
+          Logoya bas, o stüdyonun oyunlarını gör.
         </p>
         <ProvidersGallery providers={providers} active={active} onPick={setActive} />
       </section>
       <section className="wv-section" id="oyunlar">
-        <h2>Oyun galerisi</h2>
+        <h2>Slot oyunları</h2>
         <p className="wv-section-lead">
-          Casino Winvala lobisi: kare kapak, isim, stüdyo
+          Oyuna tıkla, salonda aç
           {active ? ` · ${providers.find((p) => p.slug === active)?.name}` : ""}.
-          Kartlar giriş kapısına gider.
         </p>
         <div className="wv-chips">
           <button
@@ -99,8 +102,7 @@ export function LobbyGalleries({
             visible.map((g) => <Tile key={g.slug} game={g} />)
           ) : (
             <p className="wv-section-lead">
-              Bu stüdyo canlı masalar için etiketlenir; slot ızgarası diğer
-              sağlayıcılarda durur.
+              Bu sağlayıcı canlı casino. Slotlar diğer stüdyolarda.
             </p>
           )}
         </div>
