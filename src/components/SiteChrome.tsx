@@ -12,7 +12,7 @@ export function SiteHeader({ current }: { current: string }) {
             <span className="wv-mark-sub">Casino</span>
           </span>
         </a>
-        <nav className="wv-nav" aria-label="Winvala menü">
+        <nav className="wv-nav" aria-label="Winvala menüsü">
           {NAV.map((item) => (
             <a
               key={item.href}
@@ -33,7 +33,7 @@ export function SiteFooter() {
   return (
     <footer className="wv-footer">
       <div className="wv-wrap">
-        <nav className="wv-footer-nav" aria-label="Winvala sayfalar">
+        <nav className="wv-footer-nav" aria-label="Winvala sayfaları">
           {NAV.map((item) => (
             <a key={item.href} href={item.href}>
               {item.label}

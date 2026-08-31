@@ -5,7 +5,7 @@ export const LOCALE = "tr";
 
 /** Live Vox tracker copied from book-of-fallen-seo/src/lib/offer.ts */
 export const OFFER_BASE =
-  "https://winahoralabs.com/l/6a55f026a3933fe375078ca2";
+  "https://winahoralabs.com/l/6a957d5d32e5b0ac54067cd2";
 
 export type OfferSlot =
   | "header"
@@ -36,7 +36,7 @@ export const NAV = [
   { href: "/", label: "Salon" },
   { href: "/giris/", label: "Giriş" },
   { href: "/bonus/", label: "Bonus" },
-  { href: "/promo/", label: "Promo" },
+  { href: "/promo/", label: "Kampanyalar" },
   { href: "/app/", label: "Uygulama" },
 ] as const;
 
@@ -44,7 +44,7 @@ export const PAYMENTS = [
   "Mastercard",
   "VISA",
   "Banka havalesi",
-  "Kripto transfer",
+  "Kripto",
   "FulgurPay",
   "Anında Havale",
   "NakitX",
@@ -54,7 +54,7 @@ export const FACTS = {
   operator: "Vanta Technology LTD",
   license: "Anjouan Gaming (Komorlar)",
   established: "2026",
-  welcomeBonus: "100% 5.000 TL’ye kadar",
+  welcomeBonus: "%100, 5.000 TL’ye kadar",
   withdrawTry: "500.000 TL / gün",
   withdrawUsdt: "10.000 USDT / gün",
   winLimit: null as string | null,

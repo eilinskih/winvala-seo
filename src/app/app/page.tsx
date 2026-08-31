@@ -5,7 +5,7 @@ import { VoxBand, VoxCta } from "@/components/VoxCta";
 export const metadata: Metadata = {
   title: "Winvala uygulama",
   description:
-    "Winvala tarayıcıda açılır. App Store / Play uygulaması yok. Safari veya Chrome’dan Ana Ekrana Ekle.",
+    "Winvala tarayıcıda açılır. App Store veya Google Play’de uygulaması yok. Safari ya da Chrome’dan Ana Ekrana Ekle.",
   alternates: { canonical: "/app/" },
 };
 
@@ -20,8 +20,9 @@ export default function AppPage() {
               <p className="wv-kicker">Mobil</p>
               <h1>Winvala uygulama</h1>
               <p className="wv-lede">
-                Winvala tarayıcıda açılır. App Store / Play uygulaması yok.
-                Safari veya Chrome’dan Ana Ekrana Ekle.
+                Winvala tarayıcıda açılır. App Store veya Google Play’de
+                uygulaması yok. Safari ya da Chrome’dan Ana Ekrana Eklemen
+                yeterli.
               </p>
               <div className="wv-cta-row">
                 <VoxCta slot="app" label="Salona gir" />
@@ -41,17 +42,18 @@ export default function AppPage() {
           <article className="wv-section wv-prose">
             <h2>Nasıl eklenir</h2>
             <p>
-              iOS Safari’de paylaş → Ana Ekrana Ekle. Android Chrome’da menü →
-              Ana ekrana ekle. Kısayol koyu temayla, Winvala adıyla eklenir.
+              iPhone’da Safari’den Paylaş’a bas, Ana Ekrana Ekle’yi seç.
+              Android’de Chrome menüsünden Ana ekrana ekle. Kısayol, Winvala
+              adıyla ve koyu temayla gelir.
             </p>
             <p>
-              App Store veya Play Store’da Winvala uygulaması yok. Sahte APK
-              indirme. Giriş tarayıcıdan yapılır.
+              App Store veya Google Play’de Winvala uygulaması yok. Sahte APK
+              indirme; giriş tarayıcıdan yapılır.
             </p>
           </article>
           <VoxBand
             slot="after"
-            text="Kısayol hazır. Winvala tarayıcıda açılır."
+            text="Kısayolu ekledikten sonra Winvala tarayıcıda açılır."
             label="Giriş yap"
           />
         </div>

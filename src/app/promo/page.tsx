@@ -3,9 +3,9 @@ import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { VoxBand, VoxCta } from "@/components/VoxCta";
 
 export const metadata: Metadata = {
-  title: "Winvala promo",
+  title: "Winvala kampanyaları",
   description:
-    "Winvala güncel kampanyalar üyelik sonrası lobide görünür.",
+    "Winvala güncel kampanyalar üyelik sonrası lobide görünür. Sabit kod listesi yok.",
   alternates: { canonical: "/promo/" },
 };
 
@@ -18,7 +18,7 @@ export default function PromoPage() {
           <div className="wv-wrap">
             <div className="wv-hero-frame">
               <p className="wv-kicker">Kampanyalar</p>
-              <h1>Winvala promo</h1>
+              <h1>Winvala kampanyaları</h1>
               <p className="wv-lede">
                 Güncel kampanyalar üyelik sonrası lobide görünür. Burada sabit
                 kod listesi yok.
@@ -41,9 +41,9 @@ export default function PromoPage() {
           <article className="wv-section wv-prose">
             <h2>Güncel kampanyalar</h2>
             <p>
-              Promo, hoş geldin bonusu dışında kalan duyurulardır. Günlük
-              takvim, kayıp iadesi veya spin sayısı lobide açılır. Üye ol,
-              kampanyaları orada gör.
+              Hoş geldin bonusunun dışında kalan kampanyalar burada. Günlük
+              takvim, kayıp iadesi ve free spin’ler üyelik sonrası lobide
+              görünür. Üye ol, oradan takip et.
             </p>
             <div className="wv-linkrow">
               <a href="/giris/">Giriş</a>
@@ -53,7 +53,7 @@ export default function PromoPage() {
           </article>
           <VoxBand
             slot="after"
-            text="Kampanyalar lobide. Üye ol, bak."
+            text="Kampanyalar lobide görünür. Üye ol, oradan bak."
             label="Salona gir"
           />
         </div>

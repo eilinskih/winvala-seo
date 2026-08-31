@@ -8,26 +8,26 @@ import { FACTS, PAYMENTS } from "@/lib/offer";
 export const metadata: Metadata = {
   title: "Winvala Casino | Slot ve canlı casino",
   description:
-    "Winvala'da slotlar, canlı casino ve kasa tek hesapta. Resmi siteden giriş yap, lobide oyna. Casino Winvala.",
+    "Winvala’da slotlar, canlı casino ve kasa tek hesapta. Resmi siteden giriş yap, oynamaya başla.",
   alternates: { canonical: "/" },
 };
 
 const faqs = [
   {
     q: "Winvala nedir?",
-    a: "Biz Winvala’yız. Slot oyunları, canlı casino ve kasa tek hesapta. Giriş yap, lobide oyna.",
+    a: "Winvala bir online casino. Slotlar, canlı masalar ve kasa tek hesapta; resmi siteden giriş yapıp oynamaya başlarsın.",
   },
   {
     q: "Casino Winvala’da hangi oyunlar var?",
-    a: "Lobide Pragmatic Play, Play’n GO, Hacksaw, Nolimit City, Evolution (canlı casino) ve yüzden fazla sağlayıcı durur. Logoya bas, o stüdyonun slotlarını gör.",
+    a: "Lobide Pragmatic Play, Play’n GO, Hacksaw, Nolimit City, Evolution (canlı casino) ve yüzden fazla sağlayıcı var. Logoya tıklayınca o stüdyonun slotlarını görürsün.",
   },
   {
     q: "Nasıl para yatırılır / çekilir?",
-    a: "Kasa Mastercard, VISA, banka havalesi, kripto, FulgurPay, Anında Havale ve NakitX kabul eder. Günlük çekim limiti 500.000 TL ve 10.000 USDT.",
+    a: "Kasada Mastercard, VISA, banka havalesi, kripto, FulgurPay, Anında Havale ve NakitX geçerli. Günlük çekim limiti 500.000 TL ve 10.000 USDT.",
   },
   {
     q: "Mobilde oynanır mı?",
-    a: "Evet. Winvala tarayıcıda açılır. App Store / Play uygulaması yok. Safari veya Chrome’dan Ana Ekrana Ekle — adımlar Uygulama sayfasında.",
+    a: "Evet. Winvala tarayıcıda açılır; App Store veya Google Play’de uygulaması yok. Safari ya da Chrome’dan Ana Ekrana Eklemen yeterli — adımlar Uygulama sayfasında.",
   },
 ];
 
@@ -44,7 +44,7 @@ export default function HomePage() {
               <h1>Winvala Casino</h1>
               <p className="wv-lede">
                 Winvala’da slotlar, canlı casino ve kasa tek hesapta. Resmi
-                siteden giriş yap, lobide oyna.
+                siteden giriş yap, oynamaya başla.
               </p>
               <div className="wv-cta-row">
                 <VoxCta slot="home" label="Salona gir" />
@@ -59,7 +59,7 @@ export default function HomePage() {
         <div className="wv-wrap">
           <VoxBand
             slot="mid"
-            text="Hesabın hazır. Giriş yap, lobide oyna."
+            text="Hesabını aç, giriş yap, oynamaya başla."
             label="Üye ol"
           />
 
@@ -67,7 +67,7 @@ export default function HomePage() {
 
           <VoxBand
             slot="lobby"
-            text="Beğendiğin oyuna tıkla, salonda açılsın."
+            text="Beğendiğin oyuna tıkla, Winvala salonunda açılsın."
             label="Oyunu aç"
           />
 
@@ -77,12 +77,12 @@ export default function HomePage() {
               <p>
                 Winvala’da slotlar, canlı casino ve kasa tek hesapta. Operatör
                 Vanta Technology LTD, lisans Anjouan Gaming. 2026’da açıldık;
-                site TR dilinde.
+                site tamamen Türkçe.
               </p>
               <p>
                 Canlı casinoda Evolution masaları var. Slot tarafında yüzden
-                fazla sağlayıcı; burada sık oynanan stüdyoların logolarını ve
-                oyunlarını gösteriyoruz.
+                fazla sağlayıcı bulunuyor; burada en çok oynanan stüdyoların
+                logolarını ve oyunlarını gösteriyoruz.
               </p>
             </div>
             <div className="wv-linkrow">
@@ -95,8 +95,8 @@ export default function HomePage() {
           <section className="wv-section" id="odeme">
             <h2>Kasa ve ödemeler</h2>
             <p className="wv-section-lead">
-              Winvala kasasında yedi yöntem var. Günlük çekim limiti 500.000 TL
-              ve 10.000 USDT.
+              Winvala kasasında yedi ödeme yöntemi var. Günlük çekim limiti
+              500.000 TL ve 10.000 USDT.
             </p>
             <div className="wv-pay-grid">
               {PAYMENTS.map((p) => (
@@ -111,8 +111,9 @@ export default function HomePage() {
             <h2>Hoş geldin bonusu</h2>
             <div className="wv-prose">
               <p>
-                Hoş geldin bonusu {FACTS.welcomeBonus}. Koşullar üyelik sonrası
-                kasa ekranında. Ayrıntı <a href="/bonus/">bonus</a> sayfasında.
+                Hoş geldin bonusu {FACTS.welcomeBonus}. Çevrim ve diğer koşullar
+                üyelik sonrası kasa ekranında görünür. Ayrıntılar{" "}
+                <a href="/bonus/">bonus</a> sayfasında.
               </p>
             </div>
           </section>
@@ -121,9 +122,9 @@ export default function HomePage() {
             <h2>Mobilde oyna</h2>
             <div className="wv-prose">
               <p>
-                Winvala tarayıcıda açılır. App Store / Play uygulaması yok.
-                Safari veya Chrome’dan Ana Ekrana Ekle — adımlar{" "}
-                <a href="/app/">uygulama</a> sayfasında.
+                Winvala tarayıcıda açılır; App Store veya Google Play’de
+                uygulaması yok. Safari ya da Chrome’dan Ana Ekrana Eklemen
+                yeterli — adımlar <a href="/app/">uygulama</a> sayfasında.
               </p>
             </div>
           </section>
@@ -135,7 +136,7 @@ export default function HomePage() {
           />
 
           <section className="wv-section wv-faq" id="sss">
-            <h2>Sık sorulanlar</h2>
+            <h2>Sıkça sorulan sorular</h2>
             {faqs.map((f) => (
               <details key={f.q}>
                 <summary>{f.q}</summary>

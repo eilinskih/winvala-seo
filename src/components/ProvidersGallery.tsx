@@ -24,8 +24,8 @@ export function ProvidersGallery({
         >
           <img
             src={logoUrl(p.slug)}
-            alt={`${p.name} — Winvala casino`}
-            title={`${p.name} — Winvala casino`}
+            alt={`${p.name} — Winvala Casino`}
+            title={`${p.name} — Winvala Casino`}
             width={120}
             height={36}
             loading="lazy"

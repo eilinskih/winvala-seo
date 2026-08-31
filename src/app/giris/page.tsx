@@ -5,7 +5,7 @@ import { VoxBand, VoxCta } from "@/components/VoxCta";
 export const metadata: Metadata = {
   title: "Winvala giriş",
   description:
-    "Winvala güncel giriş. Adres değişse de kullanıcı adı ve şifre aynı kalır. Sahte sitelere girme.",
+    "Winvala güncel giriş. Adres değişse bile kullanıcı adı ve şifren aynı kalır. Sahte sitelere girme.",
   alternates: { canonical: "/giris/" },
 };
 
@@ -20,8 +20,8 @@ export default function GirisPage() {
               <p className="wv-kicker">Güncel giriş</p>
               <h1>Winvala giriş</h1>
               <p className="wv-lede">
-                Winvala güncel giriş. Adres değişse de kullanıcı adı ve şifre
-                aynı kalır. Sahte sitelere girme.
+                Winvala güncel giriş adresi bu sayfada. Adres değişse bile
+                kullanıcı adı ve şifren aynı kalır. Sahte sitelere girme.
               </p>
               <div className="wv-cta-row">
                 <VoxCta slot="giris" label="Giriş yap" />
@@ -41,17 +41,18 @@ export default function GirisPage() {
           <article className="wv-section wv-prose">
             <h2>Nasıl giriş yapılır</h2>
             <p>
-              Üç adım: salonu aç, bilgilerini yaz, lobiye gir. Yeniysen üye ol
-              butonu giriş ekranının yanında. Form salonda açılır.
+              Üç adım yeterli: salonu aç, kullanıcı adı ve şifreni yaz, lobiye
+              gir. Yeniysen giriş ekranının yanındaki “Üye ol” butonuna bas.
+              Form casino sitesinde açılır.
             </p>
             <p>
-              Site açılmazsa güncel giriş yine bu sayfadan salona bağlanır.
-              Adres değişir, hesabın değişmez.
+              Site açılmazsa güncel girişi yine bu sayfadan kullan. Adres
+              değişir, hesabın değişmez.
             </p>
             <div className="wv-linkrow">
               <a href="/bonus/">Bonus</a>
               <a href="/app/">Mobil giriş</a>
-              <a href="/promo/">Promo</a>
+              <a href="/promo/">Kampanyalar</a>
             </div>
           </article>
           <section className="wv-section wv-faq">
@@ -59,15 +60,15 @@ export default function GirisPage() {
             <details>
               <summary>Winvala giriş çalışmazsa?</summary>
               <p>
-                Önce bu sayfadaki güncel girişi kullan. Eski yer imleri
-                çalışmayabilir. Hesap silinmez; adres yenilenir.
+                Önce bu sayfadaki güncel girişi dene. Eski yer imleri
+                çalışmayabilir. Hesabın silinmez; sadece adres yenilenir.
               </p>
             </details>
             <details>
               <summary>Giriş ve üye ol aynı yerde mi?</summary>
               <p>
-                Evet. Winvala giriş ekranında üye ol formu da var. Kayıt sonrası
-                lobi hemen açılır.
+                Evet. Winvala giriş ekranında üye ol formu da var. Kayıt biter
+                bitmez lobi açılır.
               </p>
             </details>
           </section>

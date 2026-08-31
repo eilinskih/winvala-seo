@@ -6,7 +6,7 @@ import { FACTS } from "@/lib/offer";
 export const metadata: Metadata = {
   title: "Winvala bonus",
   description:
-    "Winvala hoş geldin bonusu %100, 5.000 TL’ye kadar. Koşullar üyelik sonrası kasa ekranında.",
+    "Winvala hoş geldin bonusu %100, 5.000 TL’ye kadar. Çevrim şartları üyelik sonrası kasa ekranında görünür.",
   alternates: { canonical: "/bonus/" },
 };
 
@@ -21,8 +21,8 @@ export default function BonusPage() {
               <p className="wv-kicker">Hoş geldin</p>
               <h1>Winvala bonus</h1>
               <p className="wv-lede">
-                Hoş geldin bonusu {FACTS.welcomeBonus}. Koşullar üyelik sonrası
-                kasa ekranında.
+                Hoş geldin bonusu {FACTS.welcomeBonus}. Çevrim ve diğer koşullar
+                üyelik sonrası kasa ekranında görünür.
               </p>
               <div className="wv-cta-row">
                 <VoxCta slot="bonus" label="Bonusu al" />
@@ -42,12 +42,13 @@ export default function BonusPage() {
           <article className="wv-section wv-prose">
             <h2>Hoş geldin bonusu</h2>
             <p>
-              Hoş geldin bonusu yüzde yüz eşleşme, tavan 5.000 TL. Çevrim ve
-              oyun listesi kasa ekranında. Başka tutar veya gizli kod burada yok.
+              İlk yatırımına %100 bonus, 5.000 TL’ye kadar. Çevrim şartı ve
+              hangi oyunların çevrime sayıldığı kasa ekranında yazar. Burada
+              başka tutar veya gizli kod yok.
             </p>
             <p>
-              Talep butonu salonda “Bonus talebi” olarak durur. Kampanyalar{" "}
-              <a href="/promo/">promo</a> sayfasında.
+              Salonda “Bonus talebi” butonundan talep edersin. Diğer kampanyalar{" "}
+              <a href="/promo/">kampanyalar</a> sayfasında.
             </p>
           </article>
           <section className="wv-section wv-faq">
@@ -55,15 +56,15 @@ export default function BonusPage() {
             <details>
               <summary>Hoş geldin bonusu kimlere geçerli?</summary>
               <p>
-                Yeni hesapta hoş geldin paketi kasa üzerinden bağlanır. Eski üye
-                için ayrı bir rakam yok.
+                Hoş geldin paketi yeni hesaplara kasa üzerinden tanımlanır. Eski
+                üyeler için ayrı bir hoş geldin tutarı yok.
               </p>
             </details>
             <details>
               <summary>Çevrim nedir?</summary>
               <p>
-                Çevrim, bonusun bakiyeye dönmesi için salonda oynanması gereken
-                tutar. Katı rakamı kasa metninden oku.
+                Çevrim, bonusun gerçek bakiyeye geçmesi için salonda çevirmen
+                gereken tutar. Net rakamı kasa ekranından oku.
               </p>
             </details>
           </section>

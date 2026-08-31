@@ -17,8 +17,8 @@ function Tile({ game }: { game: Slot }) {
         {game.thumb ? (
           <img
             src={game.thumb}
-            alt={`${game.name} ${game.provider} — Winvala casino`}
-            title={`${game.name} | casino Winvala`}
+            alt={`${game.name} — ${game.provider}, Winvala Casino`}
+            title={`${game.name} | Winvala Casino`}
             width={200}
             height={200}
             loading="lazy"
@@ -64,14 +64,14 @@ export function LobbyGalleries({
       <section className="wv-section" id="saglayicilar">
         <h2>Oyun sağlayıcıları</h2>
         <p className="wv-section-lead">
-          Logoya bas, o stüdyonun oyunlarını gör.
+          Logoya tıkla, o stüdyonun oyunlarını gör.
         </p>
         <ProvidersGallery providers={providers} active={active} onPick={setActive} />
       </section>
       <section className="wv-section" id="oyunlar">
         <h2>Slot oyunları</h2>
         <p className="wv-section-lead">
-          Oyuna tıkla, salonda aç
+          Oyuna tıkla, salonda açılsın
           {active ? ` · ${providers.find((p) => p.slug === active)?.name}` : ""}.
         </p>
         <div className="wv-chips">
@@ -102,7 +102,8 @@ export function LobbyGalleries({
             visible.map((g) => <Tile key={g.slug} game={g} />)
           ) : (
             <p className="wv-section-lead">
-              Bu sağlayıcı canlı casino. Slotlar diğer stüdyolarda.
+              Bu sağlayıcı canlı casino masaları sunuyor. Slotlar diğer
+              stüdyolarda.
             </p>
           )}
         </div>

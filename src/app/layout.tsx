@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Winvala",
   },
   description:
-    "Winvala'da slotlar, canlı casino ve kasa tek hesapta. Resmi siteden giriş yap, lobide oyna.",
+    "Winvala’da slotlar, canlı casino ve kasa tek hesapta. Resmi siteden giriş yap, oynamaya başla.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Winvala",
     title: "Winvala Casino",
     description:
-      "Winvala casino — slotlar, canlı casino, kasa. Casino Winvala'ya resmi siteden giriş.",
+      "Winvala’da slotlar, canlı casino ve kasa. Resmi siteden giriş yap.",
   },
   twitter: {
     card: "summary",
