@@ -1,4 +1,4 @@
-export const SITE_URL = "https://winvala.org";
+export const SITE_URL = "https://win-vala.org";
 export const SITE_NAME = "Winvala";
 export const CONTENT_DATE = "2026-08-30";
 export const LOCALE = "tr";
